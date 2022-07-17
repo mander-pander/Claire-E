@@ -25,17 +25,64 @@
                         <a class="nav-link" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#lessons">Lessons</a>
+                        <a class="nav-link" id="lessons-link" href="#lessons">Lessons</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#compositions">Compositions</a>
+                        <a class="nav-link" id="composition-link" href="#composition">Composition</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="lessons">
+    <section id="lessons" class="lessons-container">
+        <div class="container">
+            <div class="text-container">
+                <h1>Lessons</h1>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur ab earum sequi
+                    architecto ut impedit eligendi at veritatis! Quod saepe maiores voluptates quam, nam cum. Numquam unde
+                    cupiditate aut.
+                </p>
+            </div>
+
+            <div class="card-container">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Beginner</h6>
+                        <p class="card-text">For Those who are just starting in their music journey.</p>
+                        <p class="card-text">$15</p>
+                        <a href="#" class="btn btn-dark">Choose This Option</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Standard</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Intermediate</h6>
+                        <p class="card-text">For those who already understand the basics, and want to branch out.</p>
+                        <p class="card-text">$25</p>
+                        <a href="#" class="btn btn-dark">Choose This Option</a>
+                    </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">Advanced</h6>
+                        <p class="card-text">For those who really want to dive deep into music theory, and want to learn complicated styles.</p>
+                        <p class="card-text">$40</p>
+                        <a href="#" class="btn btn-dark">Choose This Option</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section id="composition" class="composition-container">
         <div class="container">
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur ab earum sequi
@@ -74,10 +121,6 @@
             </div>
 
         </div>
-    </section>
-
-    <section>
-
     </section>
 
     <script src="./app.js"></script>
