@@ -2,12 +2,14 @@ body {
     background: url('./94245871_853002478499614_407991437506904.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top left;
+    font-family: 'EB Garamond', serif;
+    height: 100vh;
   }
 
   @media (min-width: 768px) {
     main {
       padding-left: 200px;
+      height: 100vh;
     }
   }
 
@@ -41,23 +43,54 @@ body {
     }
   }
 
-  section .container {
-    background: rgba(0, 0, 0);
+section .container {
+    background: rgba(0, 0, 0, .9);
     padding: 30px;
     display: flex;
     flex-direction: column;
+    position: absolute;
+    margin-left: 10px;
 }
 
 section .card-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+section .card-container .card {
+  margin: 10px;
 }
 
 .lessons-container {
     visibility: hidden;
 }
 
+@media (min-width: 768px) {
+  #lessons {
+
+  }
+}
+
+.text-container{
+  color: #e9ecef;
+}
+
+@media (max-width: 768px) {
+  #lessons {
+    margin-top: 15vh;
+  }
+}
+
 .composition-container {
     visibility: hidden;
+}
+
+button.navbar-toggler {
+  border: none;
+}
+
+.form-container {
+  visibility: hidden;
 }
