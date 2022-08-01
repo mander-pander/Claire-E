@@ -1,21 +1,11 @@
-import {useState} from 'react';
+import styles from '../CSS/Home.module.css';
 
 const Home = () => {
-    const [isShown, setIsShown] = useState(false);
-
-    function handleClick() {
-        setIsShown(current => !current);
-    };
-
 
   return (
-    <div>
-        <button onClick={handleClick}>Home</button>
-        {isShown && (
-            <div>
-                <h1>Home</h1>
-            </div>
-        )}
+    <div className={styles.home}>
+        <h1>Claire Eckstein</h1>
+        <h3> Composer and Educator</h3>
     </div>
   )
 }
