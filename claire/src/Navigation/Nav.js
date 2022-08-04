@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import { BsInstagram, BsSpotify, BsYoutube } from "react-icons/bs";
 import { TbBrandTiktok } from "react-icons/tb";
 import { useState } from 'react';
+import styles from './Nav.module.css';
 
 function Navigation(props) {
   const [expanded, setExpanded] = useState(false);
@@ -14,11 +15,11 @@ function Navigation(props) {
   };
 
   return (
-    <Navbar expanded={expanded} bg="white" expand="lg">
-      <Container>
+    <Navbar className={styles.sidebar} expanded={expanded} bg="white" expand="md">
+      <Container >
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
+        <Navbar.Collapse id="responsive-navbar-nav" className={styles.sidebarContent}>
+          <Nav >
             <Nav.Link onClick={() => handleClick('Home')}>Home</Nav.Link>
             <Nav.Link onClick={() => handleClick('About')}>About</Nav.Link>
             <Nav.Link onClick={() => handleClick('Lessons')}>Lessons</Nav.Link>
