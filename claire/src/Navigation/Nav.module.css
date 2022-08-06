@@ -7,11 +7,6 @@
         width: 200px;
         border-right: 2px solid rgb(14, 17, 17);
         background-color: #f8f8ff;
-    }
-    .sidebarContent {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
+
     }
 }

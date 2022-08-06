@@ -16,10 +16,10 @@ function Navigation(props) {
 
   return (
     <Navbar className={styles.sidebar} expanded={expanded} bg="white" expand="md">
-      <Container >
+      <Container>
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" className={styles.sidebarContent}>
-          <Nav >
+        <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'center', textAlign: 'center'}}>
+          <Nav style={{ flexDirection: 'column' }}>
             <Nav.Link onClick={() => handleClick('Home')}>Home</Nav.Link>
             <Nav.Link onClick={() => handleClick('About')}>About</Nav.Link>
             <Nav.Link onClick={() => handleClick('Lessons')}>Lessons</Nav.Link>
@@ -28,13 +28,13 @@ function Navigation(props) {
             <Nav.Link onClick={() => handleClick('Recordings')}>Recordings</Nav.Link>
             <Nav.Link onClick={() => handleClick('Contact')}>Contact Me</Nav.Link>
             <Nav.Link href="https://www.instagram.com/themusicofclaire/" target="_blank">
-              <BsInstagram/>
+              <BsInstagram />
             </Nav.Link>
             <Nav.Link>
-              <BsSpotify/>
+              <BsSpotify />
             </Nav.Link>
             <Nav.Link>
-              <BsYoutube/>
+              <BsYoutube />
             </Nav.Link>
             <Nav.Link href="https://www.tiktok.com/@themusicofclaire" target="_blank">
               <TbBrandTiktok />
@@ -45,5 +45,6 @@ function Navigation(props) {
     </Navbar>
   );
 }
+
 
 export default Navigation;
