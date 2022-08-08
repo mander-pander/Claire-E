@@ -1,9 +1,11 @@
 import styles from '../CSS/Lessons.module.css';
+import Container from 'react-bootstrap/Container';
 
 const Lessons = () => {
 
   return (
     <div className={styles.page}>
+      <Container className={styles.content}>
         <h1>Lessons</h1>
           <p>
             Eckstein offers lessons for anybody wishing to increase their knowledge of music.
@@ -36,6 +38,7 @@ const Lessons = () => {
             The lessons will take place over Google Duo and will be online. If you live within 20 miles of Milan, Indiana, Eckstein is willing to travel to your home and give you in person lessons.
             If you are interested in lessons, either for yourself or your loved ones, please reach out to Eckstein at claireecksteinmusic@gmail.com.
           </p>
+      </Container>
     </div>
   )
 }
