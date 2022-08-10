@@ -1,0 +1,17 @@
+.page {
+    margin: 5%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+@media (min-width: 768px) {
+    .page {
+        margin-left: 225px;
+    }
+}
