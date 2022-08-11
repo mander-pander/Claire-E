@@ -22,6 +22,8 @@ const MusicCatologue = () => {
 
       <div className={styles.item}>
         <h4><b>Solace (2018)</b> <br></br>written for Flute, Oboe, and Piano.</h4>
+        <audio src="./Midi_Files/Solace Midi Mockup.wav" controls type="audio/wav" />
+
         <Document
           file="./PDF-Files/Solace_First_Page.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
@@ -36,6 +38,7 @@ const MusicCatologue = () => {
 
       <div className={styles.item}>
         <h4><b>After Hours (2019)</b> <br></br>written for Trumpet, Baritone, and Piano.</h4>
+        <audio src="./Midi_Files/After Hours Midi Mockup.wav" controls type="audio/wav" />
         <Document
           file="./PDF-Files/After_Hours_First_Page .pdf"
           onLoadSuccess={onDocumentLoadSuccess}
@@ -49,6 +52,7 @@ const MusicCatologue = () => {
 
       <div className={styles.item}>
         <h4><b>Clouds of the Sky (2019)</b> <br></br>written for Flute, Oboe, and Piano.</h4>
+        <audio src="./Midi_Files/Clouds of the Sky Midi Mockup.wav" controls type="audio/wav" />
         <Document
           file="./PDF-Files/Clouds_of_the_Sky_First_Page.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
