@@ -8,7 +8,7 @@ const Home = () => {
     <div className={styles.home}>
       <Container className={styles.textBox}>
         <h1>Claire Eckstein</h1>
-        <h3> Composer and Educator</h3>
+        <h3> <i>Composer & Educator</i></h3>
       </Container>
     </div>
   )
