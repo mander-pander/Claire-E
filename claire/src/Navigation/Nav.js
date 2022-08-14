@@ -15,7 +15,7 @@ function Navigation(props) {
   };
 
   return (
-    <Navbar className={styles.sidebar} expanded={expanded} bg="white" expand="md">
+    <Navbar className={styles.sidebar} expanded={expanded} expand="md">
       <Container>
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'center', textAlign: 'center'}}>
@@ -24,7 +24,7 @@ function Navigation(props) {
             <Nav.Link onClick={() => handleClick('About')}>About</Nav.Link>
             <Nav.Link onClick={() => handleClick('Lessons')}>Lessons</Nav.Link>
             <Nav.Link onClick={() => handleClick('Composition')}>Composition</Nav.Link>
-            <Nav.Link onClick={() => handleClick('MusicCatologue')}>Music Catologue</Nav.Link>
+            <Nav.Link onClick={() => handleClick('MusicCatalogue')}>Music Catalogue</Nav.Link>
             <Nav.Link onClick={() => handleClick('Recordings')}>Recordings</Nav.Link>
             <Nav.Link onClick={() => handleClick('Contact')}>Contact Me</Nav.Link>
             <Nav.Link href="https://www.instagram.com/themusicofclaire/" target="_blank">
