@@ -1,5 +1,6 @@
 import styles from '../CSS/Lessons.module.css';
 import Container from 'react-bootstrap/Container';
+import Mailto from './Mail';
 
 const Lessons = () => {
 
@@ -36,7 +37,14 @@ const Lessons = () => {
 
           <p>
             The lessons will take place over Google Duo and will be online. If you live within 20 miles of Milan, Indiana, Eckstein is willing to travel to your home and give you in person lessons.
-            If you are interested in lessons, either for yourself or your loved ones, please reach out to Eckstein at claireecksteinmusic@gmail.com.
+          </p>
+          <span className={styles.notes}> &#119070; &#9833; &#9837; &#9834; </span>
+          <p>
+            If you are interested in lessons, either for yourself or your loved ones, please reach out to Eckstein at For any and all inquiries, kindly send an email to&nbsp;
+              <Mailto email="adgodsey@gmail.com" subject="Lesson Inquiry" body="Please describe your request or what you might want more information on:">
+                claireecksteinmusic@gmail.com
+              </Mailto>
+              .
           </p>
       </Container>
     </div>
