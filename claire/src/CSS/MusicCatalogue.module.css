@@ -35,8 +35,49 @@
     align-items: center;
 }
 
+.item audio {
+    padding-bottom: 10px;
+}
+
 @media (min-width: 768px) {
     .page {
         margin-left: 200px;
+    }
+
+    .item {
+        margin-left: 10%;
+        margin-right: 10%;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas:
+        "name name"
+        "doc player"
+        "doc summary";
+        border-bottom: solid 1px black;
+    }
+
+    .item h4 {
+        grid-area: name;
+    }
+
+    .summary {
+        grid-area: summary;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .item audio {
+        grid-area: player;
+        display: flex;
+        justify-self: center;
+    }
+
+    .doc {
+        grid-area: doc;
+    }
+
+    .doc:hover {
+        cursor: crosshair;
     }
 }
