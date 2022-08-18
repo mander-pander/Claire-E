@@ -3,22 +3,11 @@ import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import Mailto from './Mail';
-import { Document, Page, pdfjs } from "react-pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = 'pdf.worker.js';
 
 const MusicCatalogue = () => {
   const [showSol, setShowSol] = useState(false);
   const [showAfter, setShowAfter] = useState(false);
   const [showClouds, setShowClouds] = useState(false);
-
-
-
-  const [numPages, setNumPages] = useState(null);
-  const [pageNumber] = useState(1);
-
-  const onDocumentLoadSuccess = ({ numPages }) => {
-    setNumPages(numPages);
-  };
 
   return (
     <div className={styles.page}>
@@ -34,7 +23,7 @@ const MusicCatalogue = () => {
       </div>
 
       <div className={styles.item}>
-        <h4><b>Solace (2018)</b> <br></br>written for Flute, Oboe, and Piano.</h4>
+        <h4><b>Solace (2018)</b> <br></br>written for Flute, Oboe, and Piano</h4>
         <div className={styles.summary}>
           <p>
             Solace represents the false comfort one endures in making a decision to journey into unfamiliar territory. The memories of the road behind stay vivid only in their mind. There is beauty in not knowing what lies ahead, yet there is an inescapable fear that refuses to be silenced.
@@ -47,25 +36,14 @@ const MusicCatalogue = () => {
           </p>
         </div>
         <audio src="./Midi_Files/Solace Midi Mockup.wav" controls type="audio/wav" />
+        <img src="./PDF-Files/Solace_First_Page.png" className={styles.doc} onClick={() => setShowSol(true)}/>
 
-        <Document className={styles.doc} onClick={() => setShowSol(true)}
-          file="./PDF-Files/Solace_First_Page.pdf"
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
-
-        <Modal show={showSol} onHide={() => setShowSol(false)} animation={false}>
+        <Modal show={showSol} onHide={() => setShowSol(false)} animation={false} size='lg'>
           <Modal.Header closeButton>
             <Modal.Title>Solace Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Document
-              file="./PDF-Files/Solace_First_Page.pdf"
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page pageNumber={pageNumber} />
-            </Document>
+            <img src="./PDF-Files/Solace_First_Page.png" className={styles.doc}/>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowSol(false)}>
@@ -77,7 +55,7 @@ const MusicCatalogue = () => {
       </div>
 
       <div className={styles.item}>
-        <h4><b>After Hours (2019)</b> <br></br>written for Trumpet, Baritone, and Piano.</h4>
+        <h4><b>After Hours (2019)</b> <br></br>written for Trumpet, Baritone, and Piano</h4>
         <div className={styles.summary}>
           <p>
             After Hours represents the daily grind many of us experience in our lives. It is the feeling of endless opportunities when all the daily tasks have been completed, yet it also is the feeling of being too ‘drained’ to do what you would like to do.
@@ -93,25 +71,14 @@ const MusicCatalogue = () => {
           </p>
         </div>
         <audio src="./Midi_Files/After Hours Midi Mockup.wav" controls type="audio/wav" />
+        <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.doc} onClick={() => setShowAfter(true)}/>
 
-        <Document className={styles.doc} onClick={() => setShowAfter(true)}
-          file="./PDF-Files/After_Hours_First_Page .pdf"
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
-
-        <Modal show={showAfter} onHide={() => setShowAfter(false)} animation={false}>
+        <Modal show={showAfter} onHide={() => setShowAfter(false)} animation={false} size='lg'>
           <Modal.Header closeButton>
             <Modal.Title>After Hours Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Document
-              file="./PDF-Files/After_Hours_First_Page .pdf"
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page pageNumber={pageNumber} />
-            </Document>
+            <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.doc}  />
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowAfter(false)}>
@@ -123,7 +90,7 @@ const MusicCatalogue = () => {
       </div>
 
       <div className={styles.item}>
-        <h4><b>Clouds of the Sky (2019)</b> <br></br>written for Flute, Oboe, and Piano.</h4>
+        <h4><b>Clouds of the Sky (2019)</b> <br></br>written for Flute, Oboe, and Piano</h4>
         <div className={styles.summary}>
           <p>
             Clouds of the Sky represents the various clouds found in the Earth’s troposphere. Cirrus, stratus and cumulus clouds are what we often see when looking into the sky, and to many of us, they give a sense of peace or wonderment as the sun pokes through them. This piece is intended to capture not only the ethereal quality of a sparsely clouded sky, but also, the rumbling aggression of thunderstorms.
@@ -137,24 +104,15 @@ const MusicCatalogue = () => {
         </div>
         <audio src="./Midi_Files/Clouds of the Sky Midi Mockup.wav" controls type="audio/wav" />
 
-        <Document className={styles.doc} onClick={() => setShowClouds(true)}
-          file="./PDF-Files/Clouds_of_the_Sky_First_Page.pdf"
-          onLoadSuccess={onDocumentLoadSuccess}
-        >
-          <Page pageNumber={pageNumber} />
-        </Document>
+        <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.doc} onClick={() => setShowClouds(true)} />
 
-        <Modal show={showClouds} onHide={() => setShowClouds(false)} animation={false}>
+
+        <Modal show={showClouds} onHide={() => setShowClouds(false)} animation={false} size='lg'>
           <Modal.Header closeButton>
             <Modal.Title>Clouds of the Sky Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <Document
-              file="./PDF-Files/Clouds_of_the_Sky_First_Page.pdf"
-              onLoadSuccess={onDocumentLoadSuccess}
-            >
-              <Page pageNumber={pageNumber} />
-            </Document>
+            <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.doc} />
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowClouds(false)}>
