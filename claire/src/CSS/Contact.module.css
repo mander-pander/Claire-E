@@ -1,0 +1,39 @@
+.page {
+    background: url('photo-1475744214834-0cb9be6eb226.avif');
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 10px;
+    display: flex;
+}
+
+.content {
+    background-color: rgb(14, 17, 17, .8);
+    color: rgb(248, 248, 255);
+    padding: 10px;
+    max-width: 650px;
+}
+
+.content > h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.notes {
+    font-size: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@media (min-width: 768px) {
+    .page {
+         margin-left: 200px;
+    }
+
+    .content {
+        align-self: center;
+    }
+
+}
