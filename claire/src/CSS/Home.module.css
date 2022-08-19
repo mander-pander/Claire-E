@@ -33,3 +33,16 @@
         overflow: hidden;
     }
 }
+
+@media (min-width: 1300px) {
+    .home {
+        /* background-position: right; */
+        margin-left: 200px;
+    }
+}
+@media (min-width: 1450) {
+    .home {
+        /* background-position: right; */
+        margin-left: 200px;
+    }
+}
