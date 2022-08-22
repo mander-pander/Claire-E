@@ -25,6 +25,7 @@ const MusicCatalogue = () => {
       <div className={styles.item}>
         <h4><b>Solace (2018)</b> <br></br>written for Flute, Oboe, and Piano</h4>
         <div className={styles.summary}>
+        <audio src="./Midi_Files/Solace Midi Mockup.wav" controls type="audio/wav" />
           <p>
             Solace represents the false comfort one endures in making a decision to journey into unfamiliar territory. The memories of the road behind stay vivid only in their mind. There is beauty in not knowing what lies ahead, yet there is an inescapable fear that refuses to be silenced.
           </p>
@@ -35,7 +36,6 @@ const MusicCatalogue = () => {
             This piece is written in compound ternary form for flute, oboe, and piano. The structure is as follows: A, B (development), A’. Section A outlines the main theme and harmony. The flute takes the melody and the oboe takes much of the harmony. The piano also plays the harmony, but includes a dotted motive that fuels the piece forward. Later in section A, there is a harmonic shift that moves the piece into another modal area. Section B begins with a descending sequence in the piano, and returns to the harmonic area heard in the first section of A. The two woodwinds join, building off of material present in the A section. This is considered the developmental section. The piece ends with a varied form of the A section.
           </p>
         </div>
-        <audio src="./Midi_Files/Solace Midi Mockup.wav" controls type="audio/wav" />
         <img src="./PDF-Files/Solace_First_Page.png" className={styles.doc} onClick={() => setShowSol(true)}/>
 
         <Modal show={showSol} onHide={() => setShowSol(false)} animation={false} size='lg'>
@@ -43,7 +43,7 @@ const MusicCatalogue = () => {
             <Modal.Title>Solace Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src="./PDF-Files/Solace_First_Page.png" className={styles.doc}/>
+            <img src="./PDF-Files/Solace_First_Page.png" className={styles.modalDoc}/>
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowSol(false)}>
@@ -57,6 +57,7 @@ const MusicCatalogue = () => {
       <div className={styles.item}>
         <h4><b>After Hours (2019)</b> <br></br>written for Trumpet, Baritone, and Piano</h4>
         <div className={styles.summary}>
+          <audio src="./Midi_Files/After Hours Midi Mockup.wav" controls type="audio/wav" />
           <p>
             After Hours represents the daily grind many of us experience in our lives. It is the feeling of endless opportunities when all the daily tasks have been completed, yet it also is the feeling of being too ‘drained’ to do what you would like to do.
           </p>
@@ -70,7 +71,7 @@ const MusicCatalogue = () => {
             The piece is in the following form: A, B, C, D, B’, A’. Section A acts as an introduction. This is followed by section B, which is where we hear the main chorus of the piece. The chorus features several rhythmic motives of a dotted eighth to a sixteenth note. Section C is a continuation of the musical ideas present in sections A and B. Section D is where the piece fully modulates to A Major, only to shortly return to the minor mode of the second B section. The piece ends with an altered A section.
           </p>
         </div>
-        <audio src="./Midi_Files/After Hours Midi Mockup.wav" controls type="audio/wav" />
+
         <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.doc} onClick={() => setShowAfter(true)}/>
 
         <Modal show={showAfter} onHide={() => setShowAfter(false)} animation={false} size='lg'>
@@ -78,7 +79,7 @@ const MusicCatalogue = () => {
             <Modal.Title>After Hours Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.doc}  />
+            <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.modalDoc}  />
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowAfter(false)}>
@@ -92,6 +93,7 @@ const MusicCatalogue = () => {
       <div className={styles.item}>
         <h4><b>Clouds of the Sky (2019)</b> <br></br>written for Flute, Oboe, and Piano</h4>
         <div className={styles.summary}>
+          <audio src="./Midi_Files/Clouds of the Sky Midi Mockup.wav" controls type="audio/wav" />
           <p>
             Clouds of the Sky represents the various clouds found in the Earth’s troposphere. Cirrus, stratus and cumulus clouds are what we often see when looking into the sky, and to many of us, they give a sense of peace or wonderment as the sun pokes through them. This piece is intended to capture not only the ethereal quality of a sparsely clouded sky, but also, the rumbling aggression of thunderstorms.
           </p>
@@ -102,7 +104,6 @@ const MusicCatalogue = () => {
             Eckstein has always found inspiration from the sky. This was exasperated by the long distances she drove for her work and education. During these long drives, she found herself looking up at the clouds, and noticing the changes that the atmosphere endured every day. Watching these atmospheric changes were a large part of the inspiration for this piece.
           </p>
         </div>
-        <audio src="./Midi_Files/Clouds of the Sky Midi Mockup.wav" controls type="audio/wav" />
 
         <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.doc} onClick={() => setShowClouds(true)} />
 
@@ -112,7 +113,7 @@ const MusicCatalogue = () => {
             <Modal.Title>Clouds of the Sky Preview</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.doc} />
+            <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.modalDoc} />
           </Modal.Body>
           <Modal.Footer>
             <Button variant="secondary" onClick={() => setShowClouds(false)}>
