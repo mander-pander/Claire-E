@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import { BsInstagram, BsSpotify, BsYoutube } from "react-icons/bs";
+import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { TbBrandTiktok } from "react-icons/tb";
 import { useState } from 'react';
 import styles from './Nav.module.css';
@@ -30,10 +30,7 @@ function Navigation(props) {
             <Nav.Link href="https://www.instagram.com/themusicofclaire/" target="_blank">
               <BsInstagram />
             </Nav.Link>
-            <Nav.Link>
-              <BsSpotify />
-            </Nav.Link>
-            <Nav.Link>
+            <Nav.Link href="https://www.youtube.com/channel/UC2KVuQiXZDr3lOQ8lAYIp_w/featured" target="_blank">
               <BsYoutube />
             </Nav.Link>
             <Nav.Link href="https://www.tiktok.com/@themusicofclaire" target="_blank">
