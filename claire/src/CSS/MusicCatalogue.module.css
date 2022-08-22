@@ -22,6 +22,11 @@
     align-items: center;
 }
 
+.summary audio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 .page h1 {
     text-align: center;
     text-decoration: underline;
