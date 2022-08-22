@@ -14,7 +14,7 @@ const Contact = () => {
                 claireecksteinmusic@gmail.com
           </Mailto>. Similarly, if you are interested in using one of the digital recordings for commercial or educational purposes, please don’t hesitate to reach out.
         </p>
-        <span className={styles.notes}> &#119070; &#9833; &#9834; &#9837;</span>
+        <span className={styles.notes}> &#119070; &#9833; &#9837; &#9834; </span>
       </Container>
     </div>
   )
