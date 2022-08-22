@@ -1,48 +1,59 @@
 .home {
-    background: url('./94245871_853002478499614_407991437506904.webp');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 100%;
-    min-height: 100vh;
+    background-color: rgb(248, 248, 255);
+    /* background-color: red; */
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    margin: 0;
+    height: 100vh;
+}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content img {
+    height: 100vh;
 }
 
 .textBox {
     color:rgb(14, 17, 17);
-    background-color: rgba(255, 255, 255, 0.7);
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgb(248, 248, 255);
+    text-align: center;
+    width: 100vw;
 }
 
 .textBox h1 {
-    font-size: 60px;
-    font-weight: 300;
+    font-size: 55px;
 }
 
 .textBox h3 {
     font-size: 30px;
 }
 
-
 @media (min-width: 768px) {
     .home {
-        margin-left: 150px;
-        overflow: hidden;
+        margin-left: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
-}
 
-@media (min-width: 1300px) {
-    .home {
-        /* background-position: right; */
-        margin-left: 200px;
+    .content {
+        width: 100%;
+        overflow: scroll;
     }
-}
-@media (min-width: 1450) {
-    .home {
-        /* background-position: right; */
-        margin-left: 200px;
+
+    .textBox {
+        width: 100%;
+    }
+
+    .content img {
+        height: 75vh;
     }
 }
