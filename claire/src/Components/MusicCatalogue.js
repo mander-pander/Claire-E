@@ -14,11 +14,11 @@ const MusicCatalogue = () => {
       <div className={styles.textContent}>
         <h1>Music Catalogue</h1>
         <p>
-          All of the pieces listed in the music catalog are available for purchase. To receive a digital download of sheet music, kindly send an email to&nbsp;
+          All of the pieces listed in the music catalogue are available for purchase. To receive a digital download of sheet music, kindly send an email to&nbsp;
           <Mailto email="adgodsey@gmail.com" subject="Music Purchase" body="Please describe your request or what you might want more information on:">
             claireecksteinmusic@gmail.com
           </Mailto>
-          and list which pieces you would like to purchase.
+          &nbsp;and list which pieces you would like to purchase.
         </p>
       </div>
 
