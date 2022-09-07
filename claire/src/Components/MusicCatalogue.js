@@ -35,6 +35,7 @@ const MusicCatalogue = () => {
           <p>
             This piece is written in compound ternary form for flute, oboe, and piano. The structure is as follows: A, B (development), A’. Section A outlines the main theme and harmony. The flute takes the melody and the oboe takes much of the harmony. The piano also plays the harmony, but includes a dotted motive that fuels the piece forward. Later in section A, there is a harmonic shift that moves the piece into another modal area. Section B begins with a descending sequence in the piano, and returns to the harmonic area heard in the first section of A. The two woodwinds join, building off of material present in the A section. This is considered the developmental section. The piece ends with a varied form of the A section.
           </p>
+          <p><b>Price: $25</b></p>
         </div>
         <img src="./PDF-Files/Solace_First_Page.png" className={styles.doc} onClick={() => setShowSol(true)}/>
 
@@ -70,6 +71,7 @@ const MusicCatalogue = () => {
           <p>
             The piece is in the following form: A, B, C, D, B’, A’. Section A acts as an introduction. This is followed by section B, which is where we hear the main chorus of the piece. The chorus features several rhythmic motives of a dotted eighth to a sixteenth note. Section C is a continuation of the musical ideas present in sections A and B. Section D is where the piece fully modulates to A Major, only to shortly return to the minor mode of the second B section. The piece ends with an altered A section.
           </p>
+          <p><b>Price: $20</b></p>
         </div>
 
         <img src="./PDF-Files/After_Hours_First_Page.png" className={styles.doc} onClick={() => setShowAfter(true)}/>
@@ -103,6 +105,7 @@ const MusicCatalogue = () => {
           <p>
             Eckstein has always found inspiration from the sky. This was exasperated by the long distances she drove for her work and education. During these long drives, she found herself looking up at the clouds, and noticing the changes that the atmosphere endured every day. Watching these atmospheric changes were a large part of the inspiration for this piece.
           </p>
+          <p><b>Price: $22</b></p>
         </div>
 
         <img src="./PDF-Files/Clouds_of_the_Sky_First_Page.png" className={styles.doc} onClick={() => setShowClouds(true)} />
