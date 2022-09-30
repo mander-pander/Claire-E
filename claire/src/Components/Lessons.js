@@ -40,8 +40,8 @@ const Lessons = () => {
           </p>
           <span className={styles.notes}> &#119070; &#9833; &#9837; &#9834; </span>
           <p>
-            If you are interested in lessons, either for yourself or your loved ones, please reach out to Eckstein at For any and all inquiries, kindly send an email to&nbsp;
-              <Mailto email="adgodsey@gmail.com" subject="Lesson Inquiry" body="Please describe your request or what you might want more information on:">
+            If you are interested in lessons, either for yourself or your loved ones, please reach out to Eckstein at For any and all inquiries, kindly send an email to &nbsp;
+              <Mailto email="claireecksteinmusic@gmail.com" subject="Lesson Inquiry" body="Please describe your request or what you might want more information on:">
                 claireecksteinmusic@gmail.com
               </Mailto>
               .

@@ -5,6 +5,7 @@ import { BsInstagram, BsYoutube } from "react-icons/bs";
 import { TbBrandTiktok } from "react-icons/tb";
 import { useState } from 'react';
 import styles from './Nav.module.css';
+import logo from '../CSS/logo.png';
 
 function Navigation(props) {
   const [expanded, setExpanded] = useState(false);
@@ -16,10 +17,12 @@ function Navigation(props) {
 
   return (
     <Navbar className={styles.sidebar} expanded={expanded} expand="md">
+
       <Container>
         <Navbar.Toggle onClick={() => setExpanded(expanded ? false : "expanded")} aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'center', textAlign: 'center'}}>
-          <Nav style={{ flexDirection: 'column' }}>
+        <Navbar.Collapse id="responsive-navbar-nav" style={{justifyContent: 'center', textAlign: 'center', height: '100vh'}}>
+          <Nav style={{ flexDirection: 'column', justifyContent: 'center' }}>
+            <Nav.Link><img src={logo} width="150"/></Nav.Link>
             <Nav.Link onClick={() => handleClick('Home')}>Home</Nav.Link>
             <Nav.Link onClick={() => handleClick('About')}>About</Nav.Link>
             <Nav.Link onClick={() => handleClick('Lessons')}>Lessons</Nav.Link>

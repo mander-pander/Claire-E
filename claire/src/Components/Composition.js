@@ -17,7 +17,7 @@ const Composition = () => {
         <p>
           <b>
             For any and all inquiries, kindly send an email to&nbsp;
-            <Mailto email="adgodsey@gmail.com" subject="Composition Inquiry" body="Please describe your request or what you might want more information on:">
+            <Mailto email="claireecksteinmusic@gmail.com" subject="Composition Inquiry" body="Please describe your request or what you might want more information on:">
               claireecksteinmusic@gmail.com
             </Mailto>&nbsp;
             describing your request.

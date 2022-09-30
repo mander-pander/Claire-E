@@ -21,6 +21,11 @@
     text-decoration: underline;
 }
 
+.content > mailto {
+    text-align: center;
+    text-decoration: underline;
+}
+
 .notes {
     font-size: 50px;
     display: flex;
