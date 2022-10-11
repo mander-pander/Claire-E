@@ -11,7 +11,7 @@ const Composition = () => {
         <p>
           The commission fee will be calculated by what instrumentation you would like and how long you would like the piece to be.
           If you are a film or game studio, Eckstein will negotiate price with you based on how much music you require. Eckstein is more than willing to negotiate prices to allow you to stay on budget.
-          Any revisions are free, as Eckstein is focused on making sure your vision for the piece is realized.
+          Eckstein is committed to making sure your vision for the piece is realized, so if needed, she offers two revisions to the piece for free.
         </p>
         <span className={styles.notes}> &#119070; &#9833; &#9837; &#9834; </span>
         <p>
